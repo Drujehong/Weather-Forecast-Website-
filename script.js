@@ -1,9 +1,14 @@
-
 async function fetchWeatherData(){
   try{
-    const inputCityName = document.getElementById("inputCityName").value.toLowerCase();
+    const apiKeyResponse = await fetch('api_key.txt');
+    const apiKey = await apiKeyResponse.text();
+    console.log(apiKey);
 
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputCityName}&appid=8bc4a35489bf498bb98ef348ec8d69e1`);
+    if(apiKey.length == 0){
+      throw new Error("Invalid API Key")
+    }
+    const inputCityName = document.getElementById("inputCityName").value.toLowerCase();
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputCityName}&appid=${apiKey}`);
     if(!response.ok){
         throw new Error("Could not fetch resource");
     }
