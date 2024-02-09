@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast DRU</title>
+    <link rel="shortcut icon" type="img/png" href="img/turn.png" />
+    <link rel="Stylesheet" href="styles.css" />
+  </head>
+
+  <body id="body">
+    <div class="card">
+      <div class="searchSection">
+        <input type="text" id="inputCityName" placeholder="Enter City Name" class="searchBar">
+        <button onclick="fetchWeatherData()" class="searchButton">
+          <img src="icon-images/search.png" alt="Search Icon">
+        </button>
+      </div>
+      
+      <div class="weatherData">
+        <img src="icon-images/clear.png" alt="Weather Icon" class="weatherIcon">
+        <h1 class="temp">31°C</h1>
+        <h2 class="cityName">Kuala Lumpur</h2>
+        <h3 class="currTime"></h3>
+        <div class="details">
+          <div class="col">
+              <img src="icon-images/humidity.png" alt="Humidity Icon">
+              <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+              </div>
+          </div>
+          <div class="col">
+            <img src="icon-images/wind.png" alt="Wind Icon">
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+        </div>        
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <footer>
+    <p>&copy; 2024 Drujehong Weather Forecast. All rights reserved. | Created by Drujehong</p>
+  </footer>
+
+  <script src = "script.js"></script>
+</html>

@@ -1,0 +1,125 @@
+body {
+  margin: 100px;
+  background: rgb(43, 43, 43); /* Adjust colors as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif; /* Use a suitable font */
+  color: white; /* Set text color to contrast with the background */
+  max-height: 1000px;
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} 
+
+.card {
+  width: 90%;
+  max-width: 420px;
+  min-width: 300px;
+  background: linear-gradient(to bottom right, #4e8cff, #00cc99); /* Adjust colors as needed */
+  color: #fff;
+  border-radius: 2rem;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.searchSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar {
+  text-align: left;
+  height: 3rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3rem;
+  padding-left: 15px;
+}
+
+
+.searchButton {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: white;
+  border: none;
+  border-radius: 50%;
+}
+
+.searchButton :hover {
+  opacity: 120%;
+}
+
+.searchButton img {
+  height: 50%;
+  padding-top: 16%;
+  padding-right: 4%;
+  justify-content: center;
+}
+
+.searchButton img :hover {
+  opacity: 120%;
+}
+
+
+.weatherIcon {
+  width: 170px;
+  margin: 30px;
+}
+
+.weatherData h1{
+  font-size: 80px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.weatherData h2{
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.weatherData h3{
+  font-size: 40px;
+  font-weight: 350;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.col p {
+  margin: 5px;
+}
+
